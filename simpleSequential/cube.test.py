@@ -12,4 +12,4 @@ class TestCubeFunction(unittest.TestCase):
         self.assertEqual(cube(1), 1, "Error: cube result is incorrect.")
 
 if __name__ =="__main__":
-    unittest.main()   
+    unittest.main()
