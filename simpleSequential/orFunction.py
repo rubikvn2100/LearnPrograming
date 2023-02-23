@@ -3,3 +3,5 @@
 # Ex: 
 #   or(False, False) return False
 #   or(False, True)  return True
+def orFunction(var1: bool, var2: bool) -> bool:
+    return var1 or var2
