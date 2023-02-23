@@ -3,3 +3,5 @@
 # Ex:
 #   isPositive(5) return True
 #   isPositive(0) return False
+def isPositive(n: int) -> bool:
+    return n > 0
