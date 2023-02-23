@@ -8,13 +8,13 @@ Add new problem: "Add `problemFile.py` problem statement."
 
 Solve problem: "Add solution for `problemFile.py` problem."
 
-Add Unit Test: "Add unit test `test_problemFile.test.py` files."
+Add Unit Test: "Add unit test `test_problemFile.py` file."
 
 Fix a file: "`<reason>` for `<fileName>.<extension>`"
 
 # Git command convention sequence for submission
 
-Make sure there is nothing new in remote repo, if thre is then use `git pull`.
+Make sure there is nothing new in remote repo, if there is then use `git pull`.
 
 1/ `git status` to see list of file that ready to stage.
 
@@ -32,11 +32,13 @@ Make sure there is nothing new in remote repo, if thre is then use `git pull`.
 
 \_/ `git commit --amend` to change the commit message of the newest commit.
 
+\_/ `git log -<N>` to see the top N commits. Ex: `git log -3` to see the top 3 commits.
+
 \_/ `git log --all --decorate --oneline --graph` to see the commit tree.
 
 # Unit test
 
-Make sure you create test that cover edged case. Good unit test show that you understand the problems.
+Make sure you create test that cover edged cases. Good unit test show that you understand the problems.
 
 You can use the follow command for testing.
 
