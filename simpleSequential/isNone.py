@@ -5,3 +5,5 @@
 #   isNone("abcde") return False
 #   isNone(True)    return False
 #   isNone(5)       return False
+def isNone(var: any) -> bool:
+    return var == None
