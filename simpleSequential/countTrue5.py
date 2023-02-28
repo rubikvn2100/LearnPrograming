@@ -11,3 +11,5 @@
 # Ex: 
 #   countTrue5(True, False, True, False, False) return 2
 #   countTrue5(True, True, True, False, False)  return 3
+def countTrue5(bool1: bool, bool2: bool, bool3: bool, bool4: bool, bool5: bool) -> int:
+    return bool1 + bool2 + bool3 + bool4 + bool5
