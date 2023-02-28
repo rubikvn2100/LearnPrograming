@@ -3,3 +3,5 @@
 # Ex:
 #   isDivisibleBy42(69) return True
 #   isDivisibleBy42(42) return False
+def isDivisibleBy42(num: int) -> bool:
+    return num % 42 == 0

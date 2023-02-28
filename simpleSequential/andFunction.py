@@ -3,3 +3,5 @@
 # Ex: 
 #   and(True, False) return False
 #   and(True, True)  return True
+def andFunction(bool1: bool, bool2: bool) -> bool:
+    return bool1 and bool2
