@@ -3,3 +3,5 @@
 # Ex:
 #   booleanNegate(True)  return False
 #   booleanNegate(False) return True
+def booleanNegate(var: bool) -> bool:
+    return not var
