@@ -4,13 +4,13 @@ A share repo for programing learning.
 
 # Commit message convention
 
-Add new problem: "Add `problemFile.py` problem statement."
+Add new problem: "Add \\"`problemFile.py`\\" problem statement."
 
-Solve problem: "Add solution for `problemFile.py` problem."
+Solve problem: "Add solution for \\"`problemFile.py`\\" problem."
 
-Add Unit Test: "Add unit test `test_problemFile.py` file."
+Add Unit Test: "Add unit test \\"`test_problemFile.py`\\" file."
 
-Fix a file: "`<reason>` for `<fileName>.<extension>`"
+Fix a file: "... `<reason>` for \\"`<fileName>`\\" ..."
 
 # Git command convention sequence for submission
 
