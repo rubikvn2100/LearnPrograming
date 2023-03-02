@@ -14,27 +14,33 @@ Fix a file: "... `<reason>` for \\"`<fileName>`\\" ..."
 
 # Git command convention sequence for submission
 
-Make sure there is nothing new in remote repo, if there is then use `git pull`.
+Make sure there is nothing new in remote repo, if there is then use `git pull` before any push.
 
-1/ `git status` to see list of file that ready to stage.
+1\_/ `git status` to see list of file that ready to stage.
 
-2/ `git diff` to see the change line by line.
+2a/ `git diff` to see every change line by line.
 
-3/ `git diff <file name>` to see the change line by line in a file before staged
+2b/ `git diff <file name>` to see the change line by line in a file.
 
-4/ `git add <file name>` to stage the file.
+3\_/ `git add <file name>` to stage a file.
 
-5/ `git diff --staged <file name>` to see the change of a staged file.
+4\_/ `git status` to see if the file is staged.
 
-6/ `git commit -m "<commit message>"`
+5a/ `git diff --staged` to see the change in staged.
 
-7/ `git status` and `git log` to double check the change.
+5b/ `git diff --staged <file name>` to see the change of a file in staged.
 
-\_/ `git commit --amend` to change the commit message of the newest commit.
+6\_/ `git commit -m "<commit message>"` with the commit message convention.
 
-\_/ `git log -<N>` to see the top N commits. Ex: `git log -3` to see the top 3 commits.
+7\_/ `git status` to see if the staged file is commited
 
-\_/ `git log --all --decorate --oneline --graph` to see the commit tree.
+8\_/ `git log` to see if the correct commited message is displayed.
+
+\_\_/ `git commit --amend` to change the commit message of the newest commit.
+
+\_\_/ `git log -<N>` to see the top N commits. Ex: `git log -3` to see the top 3 commits.
+
+\_\_/ `git log --all --decorate --oneline --graph` to see the commit tree.
 
 # Unit test
 
