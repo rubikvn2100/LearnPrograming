@@ -3,3 +3,5 @@
 # Ex:
 #   integerNegate(-5) return 5
 #   integerNegate(3)  return -3
+def integerNegate(n: int) -> int:
+    return -n
