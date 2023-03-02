@@ -6,3 +6,5 @@
 # Ex:
 #   isStringEmpty("")            # return True
 #   isStringEmpty("Hello World") # return False
+def isStringEmpty(var: str) -> bool:
+    return var == ""
