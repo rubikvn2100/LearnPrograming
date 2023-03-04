@@ -54,6 +54,22 @@ You can use the follow command for testing.
 
 You can use option `--verbose` or `-v` to show the test details.
 
+# In case you want to fix a Pull Request
+
+Sometime, you want to change a pull request instead of making new fix commit because the change is too small or too silly. Here is how you do it.
+
+1\_/ `git reset --soft HEAD~<N>` to remove N commits in the top of the commit tree.
+
+2a/ `git restore --staged <file>` to restore a single file from staged.
+
+2b/ `git restore --staged .` to restore all files in the current directory.
+
+3\_/ What ever you need to do according to the convention sequence for submission.
+
+4\_/ `git push --force` to force the new change into the Remote Git.
+
+Note: if your push remove all the commits in the current Pull Request, you will also close the Pull Request. So, if you want the Pull Request to be open, you need to push at least one commit.
+
 # In case that you make to many changes.
 
 If you make too many commits for a problem, it is recommend to have a new clone and a new pull request.
