@@ -14,3 +14,5 @@
 # Ex:
 #   makeCoordinateTuple(10, 1) # return (10, 1)
 #   makeCoordinateTuple(-5, 3) # return (-5, 3)
+def makeCoordinateTuple(x: int, y: int) -> tuple:
+    return (x, y)
