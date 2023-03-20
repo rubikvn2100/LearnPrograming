@@ -7,4 +7,5 @@
 # Ex:
 #   addTwoNumericalString("321", "-21") # return "300"
 #   addTwoNumericalString("042", "-42") # return "0"
-
+def addTwoNumericalString(var1: str, var2: str) -> str:
+    return str(int(var1) + int(var2))
