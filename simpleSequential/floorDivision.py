@@ -9,3 +9,5 @@
 # Ex:
 #   floorDivision(18, 3) # return 6
 #   floorDivision(19, 4) # return 4
+def floorDivision(n1: int, n2: int) -> int:
+    return n1 // n2
