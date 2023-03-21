@@ -11,3 +11,5 @@
 # Ex:
 #   isPositiveAndDivisibleBy69(690) # return True
 #   isPositiveAndDivisibleBy69(-69) # return False
+def isPositiveAndDivisibleBy69(var: int) -> bool:
+    return var > 0 and var % 69 == 0

@@ -5,3 +5,5 @@
 #   integerToString(690) # return "690"
 #   integerToString(-69) # return "-69"
 #   integerToString(000) # return "0"
+def integerToString(n: int) -> str:
+    return str(n)

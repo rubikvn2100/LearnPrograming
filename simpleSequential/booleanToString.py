@@ -4,3 +4,5 @@
 # Ex:
 #   booleanToString(True)  # return "True"
 #   booleanToString(False) # return "False"
+def booleanToString(var: bool) -> str:
+    return str(var)

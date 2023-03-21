@@ -6,3 +6,5 @@
 #   stringToInteger("690") # return 690
 #   stringToInteger("-69") # return -69
 #   stringToInteger("000") # return 0
+def stringToInteger(n: str) -> int:
+    return int(n)

@@ -4,7 +4,7 @@
 #         Ex:
 #           print((2))       # Displayed (2)
 #           print((2, 3))    # Displayed (2, 3)
-#           print((2, 3, 5)) # Displayed (2, 4, 5)
+#           print((2, 3, 5)) # Displayed (2, 3, 5)
 #
 # We want to represent coordinate with a pair of variable `x`, `y`.
 # But, we don't want to carry them seperately because they lose their meaning when sepearte.
@@ -14,3 +14,7 @@
 # Ex:
 #   makeCoordinateTuple(10, 1) # return (10, 1)
 #   makeCoordinateTuple(-5, 3) # return (-5, 3)
+from typing import Tuple
+
+def makeCoordinateTuple(x: int, y: int) -> Tuple[int, int]:
+    return (x, y)
