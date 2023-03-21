@@ -11,3 +11,7 @@
 # Ex:
 #   listNextFiveNumber(-3) # return [-2, -1, 0, 1, 2]
 #   listNextFiveNumber(5)  # return [6, 7 8, 9, 10]
+from typing import List
+
+def listNextFiveNumber(n: int) -> List[int]:
+    return [n + 1, n + 2, n + 3, n + 4, n + 5]
