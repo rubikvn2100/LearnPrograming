@@ -1,0 +1,5 @@
+# Create a function that takes a list of five integers as an input.
+# Return a new list which is the reverse of the original list.
+# Ex:
+#   reverseFiveIntegerList([-2, -1, 0, 1, 2]) # return [2, 1, 0, -1, -2]
+#   reverseFiveIntegerList([3, 5, 9, -2, -7]) # return [-7, -2, 9, 5, 3]
