@@ -7,3 +7,5 @@
 #   floatToInteger(0.012) # return 0
 #   floatToInteger(1.234) # return 1
 #   floatToInteger(123.4) # return 123
+def floatToInteger(x: float) -> int:
+    return int(x)

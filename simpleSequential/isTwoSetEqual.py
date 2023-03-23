@@ -11,3 +11,7 @@
 #   isTwoSetEqual({2, 3}, {2, 3, 2, 2, 3}) # Return True
 #   isTwoSetEqual({2, 3}, {2, 3, 1, 5, 4}) # Return False
 #   isTwoSetEqual({2, 3}, {123, 456, 789}) # Return False
+from typing import Set
+
+def isTwoSetEqual(intSet1: Set[int], intSet2: Set[int]) -> bool:
+    return intSet1 == intSet2

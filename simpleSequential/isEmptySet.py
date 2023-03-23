@@ -3,3 +3,7 @@
 # Ex:
 #   isEmptySet({})     # Return True
 #   isEmptySet({2, 3}) # Return False
+from typing import Set
+
+def isEmptySet(intSet: Set[int]) -> bool:
+    return len(intSet) == 0
