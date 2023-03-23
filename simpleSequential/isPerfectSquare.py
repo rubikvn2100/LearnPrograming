@@ -12,3 +12,5 @@
 # Ex:
 #   isPerfectSquare(16) # return True
 #   isPerfectSquare(17) # return False
+def isPerfectSquare(n: int) -> bool:
+    return n >= 0 and int(n ** 0.5) ** 2 == n
