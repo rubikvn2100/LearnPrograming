@@ -3,3 +3,7 @@
 # Ex:
 #   isIntegerListEmpty([])        # return True
 #   isIntegerListEmpty([0, 1, 2]) # return False
+from typing import List
+
+def isIntegerListEmpty(lst: List[int]) -> bool:
+    return lst == []
