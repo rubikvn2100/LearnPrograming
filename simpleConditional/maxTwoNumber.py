@@ -6,7 +6,7 @@
 #               return -n if n < 0 else n
 #
 #           def dayInFebruary(year: int) -> int:
-#               return 29 if year % 4 else 28
+#               return 29 if year % 4 == 0 else 28
 #
 # Create a that takes two integers.
 # Return the larger number.
