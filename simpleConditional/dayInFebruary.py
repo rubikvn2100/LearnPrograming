@@ -10,3 +10,8 @@
 # Ex:
 #   dayInFebruary(2023) # return 28
 #   dayInFebruary(2024) # return 29
+def dayInFebruary(year: int) -> int:
+    if year % 4 == 0:
+        return 29
+
+    return 28
