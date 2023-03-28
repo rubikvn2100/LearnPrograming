@@ -11,3 +11,8 @@
 #   integerAbsoluteValue(13) # return 13
 #   integerAbsoluteValue(0)  # return 0
 #   integerAbsoluteValue(-2) # return 2
+def integerAbsoluteValue(n: int) -> int:
+    if n < 0:
+        return -n
+
+    return n
