@@ -16,3 +16,15 @@
 #   sumIntegerToN(-1000000) # return -1
 #   sumIntegerToN(3)        # return 3
 #   sumIntegerToN(12345678) # return 76207876467003
+def sumIntegerToN(n: int) -> int:
+    if n < 0:
+        return -1
+    
+    i = 1
+    total = 0
+    while i < n:
+        total = total + i
+      
+        i = i + 1
+    
+    return total
