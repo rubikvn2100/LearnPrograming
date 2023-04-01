@@ -26,3 +26,19 @@
 #   getLetterGrade(59)  # return 'F'
 #   getLetterGrade(90)  # return 'A'
 #   getLetterGrade(981) # return -1
+from typing import Union
+
+def getLetterGrade(score: int) -> Union[str, int]:
+    if score < 0 or score > 100:
+        return -1
+
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    
+    return 'F'
