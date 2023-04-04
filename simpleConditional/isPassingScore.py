@@ -16,3 +16,13 @@
 #   isPassingScore(59)  # return False
 #   isPassingScore(90)  # return True
 #   isPassingScore(981) # return -1
+from typing import Union
+
+def isPassingScore(score: int) -> Union[bool, int]:
+    if score < 0 or score > 100:
+        return -1
+
+    if score < 60:
+        return False
+
+    return True
