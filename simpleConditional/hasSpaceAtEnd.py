@@ -4,3 +4,7 @@
 #   hasSpaceAtEnd("")                  # return False
 #   hasSpaceAtEnd("Hello  World!")     # return False
 #   hasSpaceAtEnd("  Hello  World!  ") # return True
+from typing import List
+
+def hasSpaceAtEnd(s: str) -> bool:
+    return len(s) > 0 and s[-1] == ' '
