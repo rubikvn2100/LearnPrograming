@@ -13,3 +13,5 @@
 # Ex:
 #   maxTwoNumber(12, 3) # return 12
 #   maxTwoNumber(-2, 3) # return 3
+def maxTwoNumber(n1: int, n2: int) -> int:
+    return n1 if n1 > n2 else n2
