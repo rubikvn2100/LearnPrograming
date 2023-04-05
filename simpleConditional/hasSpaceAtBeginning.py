@@ -4,3 +4,7 @@
 #   hasSpaceAtBeginning("")                  # return False
 #   hasSpaceAtBeginning("Hello  World!")     # return False
 #   hasSpaceAtBeginning("  Hello  World!  ") # return True
+from typing import List
+
+def hasSpaceAtBeginning(s: str) -> bool:
+    return len(s) > 0 and s[0] == ' '
