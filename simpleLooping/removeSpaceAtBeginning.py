@@ -17,3 +17,11 @@
 #   removeSpaceAtBeginning("")                  # return ""
 #   removeSpaceAtBeginning("Hello  World!")     # return "Hello  World!"
 #   removeSpaceAtBeginning("  Hello  World!  ") # return "Hello  World!  "
+from typing import List
+
+def removeSpaceAtBeginning(s: str) -> str:
+    i = 0
+    while i < len(s) and s[i] == ' ':
+        i = i + 1
+
+    return s[i:]
