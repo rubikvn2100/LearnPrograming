@@ -18,3 +18,29 @@
 #   incrementBinaryList([1, 0, 0, 1]) # Return [0, 1, 0, 1]
 #   incrementBinaryList([1, 1, 0, 1]) # Return [0, 0, 1, 1]
 #   incrementBinaryList([1, 1, 1, 1]) # Return [0, 0, 0, 0, 1]
+from typing import List
+
+def incrementBinaryList(binaryList: List[int]) -> List[int]:
+    lenBinaryList = len(binaryList)
+
+    if lenBinaryList == 0:
+        return -1
+
+    for digit in binaryList:
+        if digit != 0 and digit != 1:
+            return -1
+
+    i = 0
+    binaryListIncrement = []
+    carry = 1
+    while i < lenBinaryList:
+        tempSum = binaryList[i] + carry
+        carry = tempSum >> 1
+        binaryListIncrement.append(tempSum % 2)
+
+        i += 1
+
+    if carry:
+        binaryListIncrement.append(1)
+
+    return binaryListIncrement
