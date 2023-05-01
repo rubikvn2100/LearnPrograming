@@ -7,3 +7,14 @@
 #   countFactorialTrailingZero(343118)        # return 85773
 #   countFactorialTrailingZero(722935669)     # return 180733910
 #   countFactorialTrailingZero(525242356355)  # return 131310589082
+def countFactorialTrailingZero(N: int) -> int:
+    if N < 5:
+        return 0
+
+    numOfTraillingZero = 0
+    powerOfFive = 5
+    while powerOfFive < N:
+        numOfTraillingZero += N // powerOfFive
+        powerOfFive *= 5
+
+    return numOfTraillingZero
