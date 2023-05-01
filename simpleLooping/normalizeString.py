@@ -18,3 +18,27 @@
 #   normalizeString("")                  # return ""
 #   normalizeString("Hello  World!")     # return "Hello World!"
 #   normalizeString("  Hello  World!  ") # return "Hello World!"
+from typing import List
+
+def normalizeString(string: str) -> str:
+    lenString = len(string)
+
+    i = 0
+    while i < lenString and string[i] == ' ':
+        i += 1
+
+    normalizedString = ''
+    if i < lenString:
+        normalizedString += string[i]
+        i += 1
+
+    while i < lenString:
+        if string[i - 1] != ' ' or string[i] != ' ':
+            normalizedString += string[i]
+        i += 1
+
+    if len(normalizedString) > 0 and normalizedString[-1] == ' ':
+        return normalizedString[:-1]
+
+    return normalizedString
+
