@@ -15,3 +15,20 @@
 # Ex:
 #   binaryListToString([1, 0, 1, 1])       # return "1101"
 #   binaryListToString([0, 1, 1, 0, 0, 1]) # return "100110"
+from typing import List
+
+def binaryListToString(binaryList: List[int]) -> str:
+    lenBinaryList = len(binaryList)
+
+    if lenBinaryList == 0:
+        return -1
+
+    for digit in binaryList:
+        if digit != 0 and digit != 1:
+            return -1
+
+    binaryString = ""
+    for i in range(lenBinaryList):
+        binaryString = ('1' if binaryList[i] else '0') + binaryString
+
+    return binaryString
