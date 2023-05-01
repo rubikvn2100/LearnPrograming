@@ -11,3 +11,10 @@
 # Ex:
 #   createListPowerOfBase(2, 4) # returns [1, 2, 4, 8]
 #   createListPowerOfBase(3, 3) # returns [1, 3, 9]
+from typing import List
+
+def createListPowerOfBase(base: int, powerCap: int) -> List[int]:
+    if base == 0:
+        return [0] * powerCap
+
+    return [base ** i for i in range(powerCap)]
