@@ -7,3 +7,19 @@
 #   createBinaryStringList(4) # return ["0", "1", "10", "11"]
 #   createBinaryStringList(6) # return ["0", "1", "10", "11", "100", "101"]
 #   createBinaryStringList(8) # return ["0", "1", "10", "11", "100", "101", "110", "111"]
+from typing import List
+
+def createBinaryStringList(N: int) -> List[str]:
+    if N <= 0:
+        return []
+
+    binaryStringList = ["0"]
+    for num in range(1, N):
+        binaryString = ""
+        while num > 0:
+            binaryString = ('1' if num % 2 else '0') + binaryString
+            num >>= 1
+
+        binaryStringList.append(binaryString)
+
+    return binaryStringList

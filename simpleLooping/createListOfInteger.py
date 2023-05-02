@@ -10,3 +10,18 @@
 # Ex:
 #   createListOfInteger(0) # return []
 #   createListOfInteger(4) # return [0, 1, 2, 3]
+from typing import List
+
+def createListOfInteger(N: int) -> List[int]:
+    if N <= 0:
+        return []
+
+    integerList = []
+    i = 0
+    while i < N:
+        integerList.append(i)
+
+        i += 1
+
+    return integerList
+
