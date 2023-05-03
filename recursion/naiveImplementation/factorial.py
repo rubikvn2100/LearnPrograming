@@ -12,3 +12,11 @@
 # Ex:
 #   factorial(5) # return 120
 #   factorial(6) # return 720
+def factorial(number: int) -> int:
+    if number < 0:
+        return -1
+
+    if number == 0:
+        return 1
+
+    return number * factorial(number - 1)
