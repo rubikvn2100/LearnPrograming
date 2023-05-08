@@ -14,3 +14,15 @@
 #     4 = 2 + 2
 #     4 = 3 + 1
 #     4 = 4
+def countUnorderedAdditionOfSum(sum: int) -> int:
+    if sum < 0:
+        return 0
+
+    if sum == 0:
+        return 1
+
+    count = 0
+    for i in range(1, sum + 1):
+        count += countUnorderedAdditionOfSum(sum - i)
+
+    return count

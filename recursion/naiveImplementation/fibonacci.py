@@ -12,3 +12,11 @@
 # Ex:
 #   fibonacci(10) # return 55
 #   fibonacci(12) # return 144
+def fibonacci(number: int) -> int:
+    if number < 0:
+        return -1
+
+    if number <= 1:
+        return number
+
+    return fibonacci(number - 1) + fibonacci(number - 2)
