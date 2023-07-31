@@ -9,8 +9,10 @@ class SortedLinkedList:
         return self.head == None
     
     def insert(self, val: int) -> None:
+        newNode = ListNode(val)
+
         if not self.head:
-            self.head = ListNode(val)
+            self.head = newNode
             return
 
         q = None
@@ -19,15 +21,12 @@ class SortedLinkedList:
             q = p
             p = q.next
 
-        if not q:
-            q = ListNode(val)
-            q.next = p
+        newNode.next = p
 
-            self.head = q
+        if not q:
+            self.head = newNode
         else:
-            q.next = ListNode(val)
-            if p:
-                q.next.next = p
+            q.next = newNode
 
     def find(self, val: int) -> Optional[ListNode]:
         p = self.head
