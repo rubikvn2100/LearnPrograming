@@ -11,10 +11,6 @@ class SortedLinkedList:
     def insert(self, val: int) -> None:
         newNode = ListNode(val)
 
-        if not self.head:
-            self.head = newNode
-            return
-
         q = None
         p = self.head
         while p and p.val < val:
